@@ -98,6 +98,7 @@ resource "vsphere_virtual_machine" "etcd01" {
       "wget https://downloads.python.org/pypy/pypy3.7-v7.3.3-linux64.tar.bz2",
       "sudo tar xf pypy3.7-v7.3.3-linux64.tar.bz2",
       "sudo mv pypy3.7-v7.3.3-linux64 /opt/bin/python"
+      "python3.9 -m pip install --user ansible-core"
     ]
   } 
 
